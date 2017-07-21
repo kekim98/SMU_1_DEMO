@@ -12,6 +12,8 @@
 
     android:layout_height="match_parent"
 
+    android:background="@drawable/abc"
+
     tools:context="example.com.smu_1_demo.MainActivity">
 
 
