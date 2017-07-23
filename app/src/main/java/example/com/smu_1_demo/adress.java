@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class adress extends AppCompatActivity {
     public static final String DEMO_PREFERENCE = "DEMO_PREFERENCE";
@@ -17,7 +18,7 @@ public class adress extends AppCompatActivity {
         final EditText et1 = (EditText) findViewById(R.id.editText1);
         final EditText et2 = (EditText) findViewById(R.id.editText2);
 
-        Button button = (Button) findViewById(R.id.button);
+        final Button button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             public static final String DEMO_PREFERENCE = "DEMO_PREFERENCE";
 
@@ -25,10 +26,23 @@ public class adress extends AppCompatActivity {
                 String name = et1.getText().toString();
                 String code = et2.getText().toString();
 
+                if((name.getBytes().length <= 0)){
+                    button.setEnabled(false);
+                    Toast.makeText(adress.this,"이름을 입력하세요",Toast.LENGTH_SHORT).show();
+                }
+                else if(code.getBytes().length <= 0){
+                    button.setEnabled(false);
+                    Toast.makeText(adress.this,"학번을 입력하세요",Toast.LENGTH_SHORT).show();
+                }
+                else if((name.getBytes().length <= 0)&&(code.getBytes().length <= 0)) {
+                    button.setEnabled(false);
+                    Toast.makeText(adress.this,"이름과 학번을 입력하세요",Toast.LENGTH_SHORT).show();
+                }
+                else{
                 SharedPreferences pref = getSharedPreferences(DEMO_PREFERENCE, MODE_PRIVATE);
                 pref.edit().putString(name, code).apply();
                 finish();
-
+                }
             }
 
         });
