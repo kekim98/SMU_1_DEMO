@@ -140,8 +140,8 @@ public class Adress extends AppCompatActivity
 
                     builder.setContentTitle(name)
                             .setContentText(code)
-                            .setSmallIcon(R.mipmap.ic_launcher)
-                            .setLargeIcon(BitmapFactory.decodeResource(res, R.mipmap.ic_launcher))
+                            .setSmallIcon(R.mipmap.ic_launcher3)
+                            .setLargeIcon(BitmapFactory.decodeResource(res, R.mipmap.ic_launcher3))
                             .setContentIntent(contentIntent)
                             .setAutoCancel(true)
                             .setWhen(System.currentTimeMillis());

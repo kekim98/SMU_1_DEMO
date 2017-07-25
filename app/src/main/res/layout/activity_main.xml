@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/pic123">
     tools:context="example.com.smu_1_demo.MainActivity">
 
     <ListView
