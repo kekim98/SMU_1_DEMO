@@ -12,7 +12,7 @@ import android.view.MotionEvent;
 import android.view.View;
 
 /**
- * Created by YJH on 2017-07-25.
+ * Created by YJJ on 2017-07-25.
  */
 
 public class ClearEditText extends AppCompatEditText implements TextWatcher, View.OnTouchListener, View.OnFocusChangeListener

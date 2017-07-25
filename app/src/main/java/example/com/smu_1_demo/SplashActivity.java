@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 /**
- * Created by KDH on 2017-07-24.
+ * Created by YJJ on 2017-07-24.
  */
 
 public class SplashActivity extends AppCompatActivity

@@ -129,4 +129,8 @@ public class MainActivity extends AppCompatActivity
         }
         return true;
     }
+    public void onClick3(View view) {
+        Intent intent_web = new Intent(MainActivity.this, WebActivity.class);
+        startActivity(intent_web);
+    }
 }

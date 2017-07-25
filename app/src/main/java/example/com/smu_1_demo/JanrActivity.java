@@ -12,7 +12,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 /**
- * Created by KDH on 2017-07-24.
+ * Created by YJJ on 2017-07-24.
  */
 
 public class JanrActivity extends AppCompatActivity
@@ -23,6 +23,9 @@ public class JanrActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_janr);
+
+
+
 
         setTitle("어느 분야에 지원하시겠습니까?");
 
@@ -50,7 +53,11 @@ public class JanrActivity extends AppCompatActivity
                 startActivity(janr);
 
                 finish();
+
             }
+
         });
+
     }
+
 }
