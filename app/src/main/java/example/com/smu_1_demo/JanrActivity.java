@@ -24,6 +24,9 @@ public class JanrActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_janr);
 
+
+
+
         setTitle("어느 분야에 지원하시겠습니까?");
 
         ArrayList<String> items = new ArrayList<String>();
@@ -50,7 +53,11 @@ public class JanrActivity extends AppCompatActivity
                 startActivity(janr);
 
                 finish();
+
             }
+
         });
+
     }
+
 }

@@ -4,12 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/pic123">
+    android:background="@drawable/pic123"
+    android:orientation="vertical"
+    android:weightSum="1"><![CDATA[
     tools:context="example.com.smu_1_demo.MainActivity">
+
+
+
+    ]]>
 
     <ListView
         android:id="@+id/listview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="437dp"
+        android:layout_weight="1.05" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/homepage"
+        android:onClick="onClick3"
+        android:text="평창 동계올림픽 공식 홈페이지"
+        android:textSize="24sp" />
 
 </LinearLayout>
