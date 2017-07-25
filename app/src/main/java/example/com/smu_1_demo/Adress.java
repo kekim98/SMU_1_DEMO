@@ -18,6 +18,7 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -133,7 +134,7 @@ public class Adress extends AppCompatActivity
 
                     Intent notificationIntent = new Intent(Adress.this, Contact.class);
                     notificationIntent.putExtra("name", name); //전달할 값
-                    notificationIntent.putExtra("code", code); //전달할 값
+                    notificationIntent.putExtra("code", janr_txt); //전달할 값
                     PendingIntent contentIntent = PendingIntent.getActivity(Adress.this, 0, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 
                     NotificationCompat.Builder builder = new NotificationCompat.Builder(Adress.this);
@@ -170,7 +171,7 @@ public class Adress extends AppCompatActivity
     {
         public CharSequence filter(CharSequence source, int start, int end, Spanned dest, int dstart, int dend)
         {
-            Pattern ps = Pattern.compile("^[ㄱ-ㅣ가-힣a-zA-Z]*$");
+            Pattern ps = Pattern.compile("^[ㄱ-ㅣ가-힣a-zA-Z]*$"); // 정규식을 의미합니다.
             if(!ps.matcher(source).matches())//et1 에딧텍스트에 글자가 입력될 때마다 값을 가져와서 그 값이 한글 또는 영어가 맞는지 아닌지 검열후 아니라면 토스트를 띄웁니다.
             {
                 Toast.makeText(Adress.this, "특수문자, 숫자는 입력할 수 없습니다.", Toast.LENGTH_SHORT).show();

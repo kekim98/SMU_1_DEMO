@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity
 
                 new AlertDialog.Builder(MainActivity.this)
                         .setTitle("정말로 삭제하시겠습니까?")
-                        .setMessage("아이템이름 : " + name)
+                        .setMessage("선택된 사용자 : " + name)
                         .setNegativeButton("아니요", new DialogInterface.OnClickListener()
                         {
                             @Override

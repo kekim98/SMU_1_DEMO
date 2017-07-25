@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -29,7 +30,7 @@
 
     </LinearLayout>
 
-    <EditText
+    <example.com.smu_1_demo.ClearEditText
         android:id="@+id/editText1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -37,9 +38,9 @@
         android:layout_marginRight="50dp"
         android:layout_marginTop="50dp"
         android:ems="10"
-        android:hint="이름"/>
+        android:hint="이름" />
 
-    <EditText
+    <example.com.smu_1_demo.ClearEditText
         android:id="@+id/editText2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -47,9 +48,9 @@
         android:layout_marginRight="50dp"
         android:ems="10"
         android:hint="학번"
-        android:inputType="number"/>
+        android:inputType="number" />
 
-    <EditText
+    <example.com.smu_1_demo.ClearEditText
         android:id="@+id/editText3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -58,7 +59,7 @@
         android:ems="10"
         android:hint="성별"/>
 
-    <EditText
+    <example.com.smu_1_demo.ClearEditText
         android:id="@+id/editText4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
