@@ -4,7 +4,7 @@
 
     <item
         android:id="@+id/menutest"
-        android:icon="@android:drawable/arrow_down_float"
+        android:icon="@drawable/ic_add_circle"
         android:title="+"
         app:showAsAction="ifRoom" />
 </menu>
