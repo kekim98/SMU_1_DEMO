@@ -4,6 +4,11 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.media.ThumbnailUtils;
+import android.net.Uri;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -13,6 +18,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.MediaController;
+import android.widget.VideoView;
 
 import java.util.Map;
 
@@ -132,5 +139,9 @@ public class MainActivity extends AppCompatActivity
     public void onClick3(View view) {
         Intent intent_web = new Intent(MainActivity.this, WebActivity.class);
         startActivity(intent_web);
+    }
+    public void onClick2(View view) {
+        Intent intent_web2 = new Intent(MainActivity.this, WebActivity2.class);
+        startActivity(intent_web2);
     }
 }
