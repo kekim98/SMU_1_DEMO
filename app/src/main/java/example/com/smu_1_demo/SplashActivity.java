@@ -20,7 +20,6 @@ public class SplashActivity extends AppCompatActivity
 
         Toast.makeText(this, "로딩중", Toast.LENGTH_SHORT).show();
 
-        //Toast의 LENGTH_SHORT는 2초입니다.
 
         new Handler().postDelayed(new Runnable()
         {
@@ -30,6 +29,6 @@ public class SplashActivity extends AppCompatActivity
                 startActivity(new Intent(SplashActivity.this, MainActivity.class));
                 finish();
             }
-        }, 2000);//그래서 2초뒤에 MainActivity로 이동하게 하였습니다.
+        }, 2000);
     }
 }

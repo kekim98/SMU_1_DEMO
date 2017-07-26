@@ -15,6 +15,7 @@
         android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="이름 : "
@@ -44,12 +45,30 @@
 
         <TextView
             android:id="@+id/code"
-            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="TextView"
-            android:textSize="30sp"/>
+            android:textSize="30sp" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="41dp"
+            android:layout_height="match_parent"
+            android:text="학번" />
+
+        <TextView
+            android:id="@+id/sang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TextView" />
     </LinearLayout>
 
 </LinearLayout>

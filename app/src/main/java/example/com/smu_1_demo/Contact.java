@@ -18,13 +18,16 @@ public class Contact extends AppCompatActivity
 
         TextView nameText = (TextView) findViewById(R.id.name);
         TextView codeText = (TextView) findViewById(R.id.code);
+        TextView sangText = (TextView) findViewById(R.id.sang);
 
         Intent recvintent = getIntent();
 
         String name = recvintent.getExtras().getString("name");
         String code = recvintent.getExtras().getString("code");
+        String sang = recvintent.getExtras().getString("sang");
 
         nameText.setText(name);
         codeText.setText(code);
+        sangText.setText(sang);
     }
 }

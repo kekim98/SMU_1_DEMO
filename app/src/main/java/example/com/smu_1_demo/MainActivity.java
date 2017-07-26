@@ -19,6 +19,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.MediaController;
+import android.widget.Toast;
 import android.widget.VideoView;
 
 import java.util.Map;
@@ -86,7 +87,7 @@ public class MainActivity extends AppCompatActivity
                                 SharedPreferences pref = getSharedPreferences(DEMO_PREFERENCE, MODE_PRIVATE);
                                 SharedPreferences.Editor editor = pref.edit();
                                 editor.remove(name);
-                                editor.commit(); //프리퍼런스 작업이 끝나면 이 작업을 꼭 해 주셔야 합니다.
+                                editor.commit();
 
                                 refresh();
                                 dialogInterface.dismiss();

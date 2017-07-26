@@ -49,7 +49,7 @@ public class JanrActivity extends AppCompatActivity
                 String janr_txt = (String) adapterView.getAdapter().getItem(i);
 
                 Intent janr = new Intent(JanrActivity.this, Adress.class);
-                janr.putExtra("janr", janr_txt); //페이지를 이동할 때 선택한 리스트값을 같이 넘깁니다.
+                janr.putExtra("janr", janr_txt);
                 startActivity(janr);
 
                 finish();
